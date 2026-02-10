@@ -1,0 +1,115 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section spacing fix for fixed navbar */
+section {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* ===== GLOBAL BACKGROUND ===== */
+body {
+    background: linear-gradient(
+        135deg,
+        #ffe4ec,   /* baby pink */
+        #ffd6e8,   /* soft pink */
+        #fbcfe8    /* pastel rose */
+    );
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid #000;
+}
+
+/* Section title styling */
+.section-title {
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.section-title {
+    color: #b3005e;
+    border-bottom: 3px solid #b3005e;
+}
+
+/* Paragraph styling (tag selector) */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Example class selector */
+.container {
+    padding: 20px;
+}
+
+/* Example ID selector */
+#home {
+    background: linear-gradient(
+        to right,
+        #ffc1dc,
+        #ff9acb
+    );
+}
+
+/* ---------- Subtle hover for navbar links ---------- */
+.nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #b3005e;
+    transform: translateY(-2px);
+}
+
+/* ---------- Button hover ---------- */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Section hover (very soft) ---------- */
+section {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Active navbar link ---------- */
+.nav-link.active {
+    color: #ff4d94 !important;
+    font-weight: bold;
+}
+
+/* ---------- Scroll animation ---------- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
